@@ -12,10 +12,12 @@ ul {
     list-style: none;
 }
 
+/* GRID AREA */
+
 
 
 /* HEADER*/
-a{
+header nav ul a{
     text-decoration: none;
     color: #774f0e;
 }
@@ -50,7 +52,7 @@ header .reserva-turno{
 }
 nav a:hover{
     color:#b19465;
-}
+}*/
 
 /* MAIN INDEX*/
 
@@ -86,6 +88,9 @@ nav a:hover{
     margin-top: 250px;
     position: absolute;
 }
+
+
+
 /* MAIN SOBRE MI */
 /* MAIN SERVICIOS*/
 /* MAIN RESERVA TURNO*/
