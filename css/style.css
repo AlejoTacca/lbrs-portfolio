@@ -17,31 +17,40 @@ ul {
 
 
 /* HEADER*/
-header nav ul a{
-    text-decoration: none;
-    color: #774f0e;
-}
-header{
-    display: flex;
-    height: 100px;
-    background-color: #eccb9a;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px;
-    
-}
+
+
 
 .logo-index{
-    display: flex;
-    align-items: center;
+    margin: 0;
+    padding: 25px 30px;
 }
 .logo-index img {
     height: 70px;
 }
-
-nav a{
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d8b988;
+    margin: auto;
+    
+    
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    
+}
+header nav a{
     font-family: fuenteheader;
-    padding-right: 10px;
+    padding-right: 5px 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #774f0e;
+    
+
 }
 header .reserva-turno{
     color: #eccb9a;
@@ -52,42 +61,129 @@ header .reserva-turno{
 }
 nav a:hover{
     color:#b19465;
-}*/
+}
 
 /* MAIN INDEX*/
+h1 { font-size: 3.5em;}
+h2 { font-size: 2.7em;}
+h3 { font-size: 2em;}
 
 
-.main {
-    background-color: #c49251;
+body{
+    margin: 0;
 }
 .img-principal{
-    border-radius: 200px;
     width: 300px;
     height: 300px;
-    margin-left: 150px;
-    margin-top: 150px;
-    position: relative;
+    border-radius: 250px;
+    margin-bottom: 40px;
+}
+#hero{
+    font-family: fuenteheader;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: url("../images/images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+#hero h1{
+    font-family: 'Caveat', cursive;
+    font-size: 90px;
+    color: #774f0e;
+}
+#hero h3{
+    font-family: fuenteheader;
+    font-size: 20px;
+    color: #774f0e;
 }
 
-.bienvenido {
-    color: #784f0e;
-    font-family: 'Caveat', cursive;
-    font-size: 70px;
-    margin-left: 450px;
-    margin-top: 150px;
-    position: absolute;
-}   
-.introduccion1 {
-    color: #b18140;
+.sobre-mi-button{
+    text-decoration: none;
     font-family: fuenteheader;
-    font-size: 90%;
-    font-weight: lighter;
-    text-align: center;
-    margin-left: 570px;
-    margin-right: 870px;
-    margin-top: 250px;
-    position: absolute;
+    color: #eccb9a;
+    background-color: #774f0e;
+    font-size: 1em;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-top: 25px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
+body a:hover{
+    color:#b19465;
+}
+
+#filosofia .container{
+    
+    text-align: center;
+    padding: 30px 12px;
+}
+#filosofia .container h2{
+    font-family: 'Caveat', cursive;
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#filosofia .container p{
+    font-family: fuenteheader;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#pilares-trabajo {
+    background-color: #eccb9a;
+    color: black;
+    text-align: center;
+    padding: 25px;
+}
+#pilares-trabajo .container{
+    padding: 30px 12px;
+}
+
+#pilares-trabajo .container h2{
+    font-family: 'Caveat', cursive;
+    font-size: 55px;
+}
+#pilares-trabajo .container p{
+    font-family: fuenteheader;
+    font-style: italic;
+    text-align: center;
+  }
+
+#pilares-trabajo .container .pilares p{
+    display: none;
+
+}
+
+#pilares-trabajo .pilares{
+    
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 25px;
+    
+}
+.container .pilares .pilar1{
+    background-image: url("../images/images/hero.jpg");
+    border-radius: 15px;
+   
+}
+.container .pilares .pilar2{
+    background-image: url("../images/images/hero.jpg");
+    border-radius: 15px;
+}
+.container .pilares .pilar3{
+    background-image: url("../images/images/hero.jpg");
+    border-radius: 15px;
+}
+
+
+
 
 
 
