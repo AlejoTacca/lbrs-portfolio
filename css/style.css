@@ -285,60 +285,10 @@ body a:hover{
 
 
 /* MAIN SOBRE MI */
+
 /* MAIN SERVICIOS*/
+/* ---------------------------------------------------------------------------------------------------------- */
 /* MAIN RESERVA TURNO*/
-/* .img-reserva{
-    border-radius: 200px;
-    width: 300px;
-    height: 300px;
-    margin-left: 650px;
-    margin-top: 40px;
-    position: absolute;
-}
-.container-form h1{
-    font-family: 'Caveat', cursive;
-    margin-bottom: 15px;
-    font-size: 70px;
-}
-.container-form{
-    width: 100%;
-    max-width: 20px;
-    margin-left: 15px;
-    margin-top: 80px;
-    display: grid;
-    margin-top: 90px;
-}
-
-.container-form form .campo, textarea{
-    width: 100%;
-    padding: 15px 10px;
-    font-size: 15px;
-    border: 1px solid #774f0e;
-    margin-bottom: 20px;
-    border-radius: 3px;
-    outline: 0px;
-}
-.container-form form textarea{
-    max-width: 530px;
-    min-width: 530px;
-    min-height: 140px;
-    max-height: 150px;
-}
-.container-form .btn-enviar{
-    padding: 15px;
-    margin-bottom: 15px;
-    font-size: 16px;
-    border: none;
-    outline: 0px;
-    background: #774f0e;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: all 300ms ease;
-}
-.container-form .btn-enviar:hover{
-    background:#d8b988;
-} */
-
 #page-reserva{
    
     background: linear-gradient(to top right, #774f0e, #c49251)
