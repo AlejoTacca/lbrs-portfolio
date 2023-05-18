@@ -287,7 +287,7 @@ body a:hover{
 /* MAIN SOBRE MI */
 /* MAIN SERVICIOS*/
 /* MAIN RESERVA TURNO*/
-.img-reserva{
+/* .img-reserva{
     border-radius: 200px;
     width: 300px;
     height: 300px;
@@ -337,7 +337,156 @@ body a:hover{
 }
 .container-form .btn-enviar:hover{
     background:#d8b988;
+} */
+
+#page-reserva{
+   
+    background: linear-gradient(to top right, #774f0e, #c49251)
+   
 }
+#formulario  {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+#formulario .contactForm{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    width: 90%;
+    height: 90%;
+    background-color: #f6eee3;
+    box-shadow: 1px 9px 20px -5px rgba(0,0,0,0.59);
+    border-radius: 30px;
+
+}
+#formulario .contactForm .form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    margin-left: 30px;
+}
+#formulario .contactForm .form form{
+    width: 100%;
+}
+
+/*Titulo y descripcion del forms*/
+
+#formulario .contactForm .form .texto h2{
+    color: black;
+    font-size: 5em;
+    margin-bottom: 10px;
+    font-family: 'Caveat', cursive;
+}
+#formulario .contactForm .form .texto p{
+    color: #774f0e;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: fuenteheader;
+}
+
+/* InputsBox */
+section .contactForm .form form .inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+/* Etiquetas e Inputs */
+section .contactForm .form form .inputBox label{
+    color: black;
+    font-family: "Caveat", cursive;
+    font-size: 2.5em;
+}
+section .contactForm .form form .inputBox input[type="text"],
+section .contactForm .form form .inputBox input[type="email"],
+section .contactForm .form form .inputBox textarea{
+    border: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    color: #774f0e;
+    resize: none;
+}
+section .contactForm .form form .inputBox input[type="text"]:focus,
+section .contactForm .form form .inputBox input[type="email"]:focus,
+section .contactForm .form form .inputBox textarea:focus {
+    outline: 2px solid #774f0e;
+}
+
+section .contactForm .form form input[type="submit"]{
+    background-color: #774f0e;
+    display:inline-block;
+    text-align: center;
+    width: 250px;
+    padding: 10px;
+    border-radius: 15px;
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 9px 20px -5px rgba(0,0,0,0.59);
+    transition: 0.3s; 
+}
+section .contactForm .form form input[type="submit"]:hover{
+    background: #b19465;
+}
+ /* Contenedor de Información */
+ section .contactForm .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+/* Imagen */
+section .contactForm .info .imgBox{
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+section .contactForm .info .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Informacion de contacto */
+section .contactForm .info .textBox{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+section .contactForm .info .textBox .infoContact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+section .contactForm .info .textBox .infoContact ion-icon {
+    font-size: 2em;
+    margin-right: 10px;
+    color: #774f0e;
+    margin-top: 12px;
+}
+section .contactForm .info .textBox .infoContact p{
+    color: black;
+    font-family: fuenteheader;
+    margin-top: 15px;
+}
+
+
+
+
 /* Footer */
 .pie-pagina{
     background-color: #c49251;

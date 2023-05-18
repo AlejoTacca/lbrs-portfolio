@@ -9,44 +9,79 @@
     <script src="https://kit.fontawesome.com/5e09b964dd.js" crossorigin="anonymous"></script>
     <title>Belén Rodriguez Soto</title>
 </head>
-<body>
+<link rel="icon" href="../images/encabezado/LogoICO.ico" type="ico" sizes="24px">
+<body id="page-reserva">
     <header>
-        <a href="../index.html" class="logo-index">
-            <img src="../images/encabezado/Logo.png" alt="logo de la pagina">  
-        </a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html" class="incio">Inicio</a>
-                    <a href="./sobre-mi.html" class="sobre-mi">Sobre Mi</a>
-                    <a href="./servicios.html" class="servicios">Servicios</a>
-                    <a href="./reserva-turno.html" class="reserva-turno">Reserva Turno</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+        <div class="container">
+            <a href="/index.html" class="logo-index">
+                <img src="../images/encabezado/Logo.png" alt="">  
+            </a>
+            
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/index.html" class="incio">Inicio</a>
+                        <a href="../pages/sobre-mi.html" class="sobre-mi">Sobre Mi</a>
+                        <a href="../pages/servicios.html" class="servicios">Servicios</a>
+                        <a href="../pages/reserva-turno.html" class="reserva-turno">Reserva Turno</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+            
+        </header>
     <main>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
-        <style>
-            body{
-                background-color: #f1e8d9;
-            }
-        </style>
-         <img class="img-reserva" src="./images/images/pic-reserva-turno.png" alt=""/>
-        <div class="container-form">           
-                <h1>Reservá tu turno.</h1>
-                <div>
-                    <form action="#" autocomplete="off">
-                        <input type="text" name="nombre" placeholder="Tu nombre" class="campo">
-                        <input type="email" name="email" placeholder="Tu correo electrónico" class="campo">
-                        <textarea name="mensaje" placeholder="Tu mensaje (días, horarios y servicio)"></textarea>
-                        <input type="submit" name="Reservar" value="RESERVAR" class="btn-enviar">
+        
+    <section id="formulario">
+        <div class="contactForm">           
+                <div class="form">
+                    <div class="texto">
+                        <h2>Reserva tu turno!</h2>
+                        <p>Por favor, completa la siguiente información nombre, email, servicio y disponibilidad horaria. Una vez que reciba tus detalles, me contactare con vos para confirmar la disponibilidad de horarios y reservar tu turno. ¡Aprecio mucho tu interés en mis servicios y espero poder atenderte pronto! Si tenes alguna pregunta adicional, no dudes en consultarme.</p>
+
+                    </div>
+                    <form action="">
+                        <div class="inputBox">
+                            <label for="">Tu nombre</label>
+                            <input type="text" placeholder="Nombre...">
+                        </div>
+
+                        <div class="inputBox">
+                            <label for="">Tu email</label>
+                            <input type="text" placeholder="Email...">
+                        </div>
+
+                        <div class="inputBox">
+                            <label for="">Tu disponibilidad y servicio</label>
+                            <textarea name="" id="" cols="30" rows="5" placeholder="Quisiera el servicio ... y mi disponibilidad horaria es..."></textarea>
+                        </div>
+                        <input type="submit" value="Reservar"/>
                     </form>
                 </div>
+                <div class="info">
+                    <div class="imgBox">
+                        <img src="../images/images/pic-reserva-turno.png" alt="">
+                    </div>
+                    <div class="textBox">
+                        <div class="infoContact">
+                            <ion-icon name="map"></ion-icon> <p>Parque Chacabuco, C1424, CABA</p>
+                        </div>
+                        <div class="infoContact">
+                            <ion-icon name="call"></ion-icon> <p>+54 9 1152600965</p>                 
+                        </div>
+                        <div class="infoContact">
+                            <ion-icon name="mail"></ion-icon> <p>lbelen.soto@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
         </div>
-        
+    </section>  
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </main>
     <footer class="pie-pagina">
         <div class="grupo-1">
