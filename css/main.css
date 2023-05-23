@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: fuenteheader;
+  src: url("../images/fonts/tex-gyre-adventor/texgyreadventor-regular.otf") format("truetype");
+  font-weight: lighter;
+}
+ul {
+  list-style: none;
+}
+
+/* GRID AREA */
+/* HEADER*/
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d8b988;
+}
+header .container .logo-index {
+  margin: 0;
+  padding: 25px 30px;
+}
+header .container .logo-index img {
+  height: 70px;
+}
+header .container .reserva-turno {
+  color: #eccb9a;
+  background-color: #774f0e;
+  border-radius: 10px;
+  font-family: fuenteheader;
+  padding: 10px;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+header nav a {
+  font-family: fuenteheader;
+  padding-right: 5px 5px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #774f0e;
+}
+header nav a:hover {
+  color: #b19465;
+}
+@media (min-width: 720px) {
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+  header nav ul li a {
+    padding-right: 10px;
+  }
+}
+@media (min-width: 720px) {
+  header header {
+    position: fixed;
+    width: 100%;
+  }
+  header header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header header .container div nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+  header header .container div nav ul li a {
+    padding-right: 10px;
+  }
+  header #hero .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  header #hero .texto {
+    width: 75%;
+    text-align: center;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header #hero .img-principal {
+    background-image: url("/images/images/img-main-1.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    width: 400px;
+    margin-top: 150px;
+    margin-left: 50px;
+  }
+  header #pilares-trabajo .pilares {
+    display: flex;
+    justify-content: center;
+  }
+  header #pilares-trabajo .container .pilares .pilar1 h2 {
+    margin-top: 0;
+  }
+  header #pilares-trabajo .container .pilares .pilar1 p {
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  header #pilares-trabajo .container .pilares .pilar2 p,
+  header #pilares-trabajo .container .pilares .pilar3 p {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  header #pilares-trabajo .pilar1,
+  header #pilares-trabajo .pilar2,
+  header #pilares-trabajo .pilar3 {
+    padding: 50px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

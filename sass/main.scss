@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: fuenteheader;
+    src: url("../images/fonts/tex-gyre-adventor/texgyreadventor-regular.otf") format("truetype");
+    font-weight: lighter;
+}
+ul {
+    list-style: none;
+}
+
+/* GRID AREA */
+
+
+
+/* HEADER*/
+
+header {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #d8b988;
+      
+      .logo-index {
+        margin: 0;
+        padding: 25px 30px;
+        
+        img {
+          height: 70px;
+        }
+      }
+      
+      .reserva-turno {
+        color: #eccb9a;
+        background-color: #774f0e;
+        border-radius: 10px;
+        font-family: fuenteheader;
+        padding: 10px;
+      }
+    }
+    
+    nav {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 25px;
+      
+      a {
+        font-family: fuenteheader;
+        padding-right: 5px 5px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #774f0e;
+        
+        &:hover {
+          color: #b19465;
+        }
+      }
+      
+      @media (min-width: 720px) {
+        flex-direction: row;
+        padding-bottom: 0;
+        
+        ul li a {
+          padding-right: 10px;
+        }
+      }
+    }
+    
+    @media (min-width: 720px) {
+        header {
+            position: fixed;
+            width: 100%;
+          
+            .container {
+              flex-direction: row;
+              justify-content: space-between;
+          
+              div nav {
+                flex-direction: row;
+                padding-bottom: 0;
+                padding-right: 20px;
+          
+                ul li a {
+                  padding-right: 10px;
+                }
+              }
+            }
+        }
+        #hero {
+            .container {
+              display: flex;
+              justify-content: center;
+              flex-direction: row;
+            }
+          
+            .texto {
+              width: 75%;
+              text-align: center;
+              padding: 0px 30px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            }
+          
+            .img-principal {
+              background-image: url("/images/images/img-main-1.jpg");
+              background-size: cover;
+              background-position: center center;
+              height: 400px;
+              width: 400px;
+              margin-top: 150px;
+              margin-left: 50px;
+            }
+        }
+        #pilares-trabajo {
+            .pilares {
+              display: flex;
+              justify-content: center;
+            }
+          
+            .container {
+              .pilares {
+                .pilar1 {
+                  h2 {
+                    margin-top: 0;
+                  }
+          
+                  p {
+                    display: block;
+                    margin-bottom: 30px;
+                    text-align: center;
+                  }
+                }
+          
+                .pilar2 p,
+                .pilar3 p {
+                  display: block;
+                  text-align: center;
+                  margin-bottom: 30px;
+                }
+              }
+            }
+          
+            .pilar1,
+            .pilar2,
+            .pilar3 {
+              padding: 50px;
+            }
+        }
+          
+    }
+  }
+  

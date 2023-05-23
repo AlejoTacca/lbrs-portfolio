@@ -20,24 +20,13 @@ ul {
 
 /* HEADER*/
 
-
-
-.logo-index{
-    margin: 0;
-    padding: 25px 30px;
-}
-.logo-index img {
-    height: 70px;
-}
 header .container{
     
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #d8b988;
-    
-    
-    
+
 }
 header nav{
     display: flex;
@@ -55,6 +44,15 @@ header nav a{
     
 
 }
+
+header .container .logo-index{
+    margin: 0;
+    padding: 25px 30px;
+}
+header .container .logo-index img {
+    height: 70px;
+}
+
 header .reserva-turno{
     color: #eccb9a;
     background-color: #774f0e;
@@ -81,7 +79,6 @@ nav a:hover{
     header div nav{
         flex-direction: row;
         padding-bottom: 0;
-        
         padding-right: 20px;
     }
     header div nav ul li a{
