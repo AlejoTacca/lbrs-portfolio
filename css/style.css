@@ -111,9 +111,7 @@ nav a:hover{
     #pilares-trabajo .pilares{
         display: flex;
         justify-content: center;
-        
     }
-
 
     #pilares-trabajo .container .pilares .pilar1 h2{
         margin-top: 0;
@@ -297,7 +295,7 @@ body a:hover{
    
 }
 #formulario  {
-    /*position: relative;*/
+    
     width: 100%;
     height: 100vh;
     display: grid;
@@ -305,7 +303,7 @@ body a:hover{
 }
 
 #formulario .contactForm{
-    /*position: relative;*/
+    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 20px;
@@ -318,7 +316,7 @@ body a:hover{
 
 }
 #formulario .contactForm .form{
-   /* position: relative;*/
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -399,13 +397,11 @@ section .contactForm .form form input[type="submit"]:hover{
  }
 /* Imagen */
 section .contactForm .info .imgBox{
-    /*position: relative;*/
     width: 350px;
     height: 350px;
     
 }
 section .contactForm .info .imgBox img{
-    /*position: absolute;*/
     top: 0;
     left: 0;
     width: 100%;

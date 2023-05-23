@@ -52,15 +52,6 @@ header nav a:hover {
   color: #b19465;
 }
 @media (min-width: 720px) {
-  header nav {
-    flex-direction: row;
-    padding-bottom: 0;
-  }
-  header nav ul li a {
-    padding-right: 10px;
-  }
-}
-@media (min-width: 720px) {
   header header {
     position: fixed;
     width: 100%;
@@ -103,6 +94,9 @@ header nav a:hover {
     display: flex;
     justify-content: center;
   }
+  header #pilares-trabajo .container {
+    overflow: hidden;
+  }
   header #pilares-trabajo .container .pilares .pilar1 h2 {
     margin-top: 0;
   }
@@ -121,6 +115,369 @@ header nav a:hover {
   header #pilares-trabajo .pilar2,
   header #pilares-trabajo .pilar3 {
     padding: 50px;
+  }
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.7em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+body {
+  margin: 0;
+}
+
+.img-principal {
+  width: 400px;
+  height: 400px;
+  border-radius: 250px;
+}
+
+#hero {
+  font-family: fuenteheader;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("../images/images/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#hero h1 {
+  font-family: "Caveat", cursive;
+  font-size: 90px;
+  color: #774f0e;
+}
+#hero h3 {
+  font-family: fuenteheader;
+  font-size: 20px;
+  color: #774f0e;
+  margin-bottom: 10px;
+}
+#hero .sobre-mi-button {
+  text-decoration: none;
+  justify-content: center;
+  font-family: fuenteheader;
+  color: #eccb9a;
+  background-color: #774f0e;
+  font-size: 1em;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+body a:hover {
+  color: #b19465;
+}
+
+#filosofia .container {
+  text-align: center;
+  padding: 30px 12px;
+}
+#filosofia .container h2 {
+  font-family: "Caveat", cursive;
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#filosofia .container p {
+  font-family: fuenteheader;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#pilares-trabajo {
+  background-color: #eccb9a;
+  color: black;
+  text-align: center;
+  padding: 25px;
+}
+#pilares-trabajo .container {
+  padding: 30px 12px;
+}
+#pilares-trabajo .container h2 {
+  font-family: "Caveat", cursive;
+  font-size: 55px;
+}
+#pilares-trabajo .container p {
+  font-family: fuenteheader;
+  font-style: italic;
+  text-align: center;
+}
+#pilares-trabajo .pilares {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 25px;
+}
+#pilares-trabajo .pilares .pilar1, #pilares-trabajo .pilares .pilar2, #pilares-trabajo .pilares .pilar3 {
+  background-image: url("../images/images/hero.jpg");
+  border-radius: 15px;
+  margin-right: 25px;
+}
+
+#headerReserva {
+  position: fixed;
+  width: 100%;
+}
+
+#page-reserva {
+  background: linear-gradient(to top right, #774f0e, #c49251);
+}
+
+#formulario {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+#formulario .contactForm {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  width: 90%;
+  height: 90%;
+  background-color: #f6eee3;
+  box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.59);
+  border-radius: 30px;
+}
+#formulario .contactForm .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+  margin-left: 30px;
+}
+#formulario .contactForm .form form {
+  width: 100%;
+}
+
+#formulario .contactForm .form .texto h2 {
+  color: black;
+  font-size: 5em;
+  margin-bottom: 10px;
+  font-family: "Caveat", cursive;
+}
+#formulario .contactForm .form .texto p {
+  color: #774f0e;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-family: fuenteheader;
+}
+
+section .contactForm .form form .inputBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+section .contactForm .form form .inputBox label {
+  color: black;
+  font-family: "Caveat", cursive;
+  font-size: 2.5em;
+}
+section .contactForm .form form .inputBox input[type=text],
+section .contactForm .form form .inputBox input[type=email],
+section .contactForm .form form .inputBox textarea {
+  border: none;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  color: #774f0e;
+  resize: none;
+}
+section .contactForm .form form .inputBox input[type=text]:focus,
+section .contactForm .form form .inputBox input[type=email]:focus,
+section .contactForm .form form .inputBox textarea:focus {
+  outline: 2px solid #774f0e;
+}
+section .contactForm .form form input[type=submit] {
+  background-color: #774f0e;
+  display: inline-block;
+  text-align: center;
+  width: 250px;
+  padding: 10px;
+  border-radius: 15px;
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.59);
+  transition: 0.3s;
+}
+section .contactForm .form form input[type=submit]:hover {
+  background: #b19465;
+}
+
+section .contactForm .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section .contactForm .info .imgBox {
+  width: 350px;
+  height: 350px;
+}
+section .contactForm .info .imgBox img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 170px;
+}
+
+section .contactForm .info .textBox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+section .contactForm .info .textBox .infoContact {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+section .contactForm .info .textBox .infoContact ion-icon {
+  font-size: 2em;
+  margin-right: 10px;
+  color: #774f0e;
+  margin-top: 12px;
+}
+section .contactForm .info .textBox .infoContact p {
+  color: black;
+  font-family: fuenteheader;
+  margin-top: 15px;
+}
+
+section .contactForm .info .rrss a {
+  padding: 20px;
+  font-size: 2em;
+  color: #774f0e;
+  transition: 0.3s;
+}
+section .contactForm .info .rrss a:hover {
+  color: #b19465;
+}
+
+@media only screen and (max-width: 1200px) {
+  section .contactForm {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+@media only screen and (max-width: 768px) {
+  section .contactForm .info {
+    height: 300px;
+    padding: 20px;
+  }
+  section .contactForm .info .imgBox {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  section .contactForm .form {
+    margin-left: 0px;
+    width: 100%;
+  }
+  section .contactForm .info {
+    margin-bottom: 30px;
+  }
+}
+.pie-pagina {
+  background-color: #c49251;
+  max-width: auto;
+  margin: 0 auto;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img {
+  width: 250px;
+}
+.pie-pagina .grupo-1 .box h2 {
+  font-family: "Caveat", cursive;
+  color: #774f0e;
+  margin-bottom: 25px;
+  font-size: 35px;
+}
+.pie-pagina .grupo-1 .box p {
+  font-family: fuenteheader;
+  font-size: 15px;
+  color: black;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .box .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  margin-right: 10px;
+  background-color: #774f0e;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .box .red-social a:hover {
+  color: aquamarine;
+}
+.pie-pagina .grupo-2 {
+  background-color: #774f0e;
+  padding: 15px 10px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .pie-pagina .grupo-1 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .pie-pagina .grupo-2 {
+    display: none;
   }
 }
 
