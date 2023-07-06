@@ -17,7 +17,6 @@ ul {
 /* HEADER*/
 header .container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   background-color: #d8b988;
 }
