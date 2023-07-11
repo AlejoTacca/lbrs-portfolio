@@ -354,10 +354,23 @@ body.loaded { overflow: visible; }
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
+.footer {
+  background-color: var(--marron-claro);
+  color: var(--blanco);
+  border-block-start: 1px solid var(--blanco);
+  padding-block: 18px;
+}
 
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-block-end: 15px;
+}
 
+.social-link { font-size: 1.8rem; }
 
-
+.social-link:is(:hover, :focus-visible) { color: var(--marron-oscuro); }
 
 /*-----------------------------------*\
   #MEDIA QUEREIS
