@@ -2,6 +2,12 @@
   #slider.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-snap-type: inline mandatory;
+}
+
+.slider-item { scroll-snap-align: start; }
