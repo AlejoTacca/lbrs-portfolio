@@ -72,3 +72,24 @@
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+/**
+ * responsive mas largo de 768px screen
+ */
+
+ @media (min-width: 768px) {
+
+  .portfolio-card {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .portfolio-list > li:nth-child(2n) .card-banner { order: 1; }
+
+  .portfolio-card > * {
+    width: 80%;
+    margin-inline: auto;
+  }
+
+  .portfolio-card .card-text { margin-block-start: 20px; }
+
+}

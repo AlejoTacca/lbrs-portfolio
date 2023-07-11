@@ -33,3 +33,12 @@
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+/**
+ * responsive mas largo de 768px screen
+ */
+
+ @media (min-width: 768px) {
+
+  .service-list { grid-template-columns: 1fr 1fr; }
+
+}

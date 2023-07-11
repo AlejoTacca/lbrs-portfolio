@@ -12,17 +12,12 @@
 @import url("./components/card.css");
 
 
-
-
-
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
 .header { background-color: transparent; }
 
 .header.active { background-color: var(--marron-muy-clarito); }
-
-
 
 
 /*-----------------------------------*\
@@ -227,3 +222,133 @@
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+/**
+ * responsive mas largo de 575px screen
+ */
+
+ @media (min-width: 575px) {
+
+  /**
+   * Clientes, Sobre mi & Habilidades
+   */
+
+  .client .slider-item { min-width: calc(33.33% - 20px); }
+
+  .client .slider-item .w-100,
+  .about-banner,
+  .skill-banner {
+    max-width: max-content;
+    margin-inline: auto;
+  }
+
+
+
+  /**
+   * CTA
+   */
+
+  .cta .container { justify-content: space-between; }
+
+}
+
+
+
+/**
+ * responsive mas largo de 768px screen
+ */
+
+@media (min-width: 768px) {
+
+  /**
+   * HERO
+   */
+
+  .hero-text { --fs-18: 2rem; }
+
+  .hero::after {
+    top: -20%;
+    bottom: 50%;
+    left: 48%;
+    right: -15%;
+  }
+
+
+
+  /**
+   * Clientes
+   */
+
+  .client .slider-item { min-width: calc(25% - 22.5px); }
+
+
+
+  /**
+   * Testimonios
+   */
+
+  .testi .slider-item { min-width: calc(50% - 15px); }
+
+}
+
+
+
+
+
+/**
+ * responsive mas largo de 992px screen
+ */
+
+@media (min-width: 992px) {
+
+  /**
+   * HERO, Sobre mi, Habilidades
+   */
+
+  :is(.hero, .about, .skill) .container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+
+
+  /**
+   * HERO
+   */
+
+  .hero { text-align: left; }
+
+  .hero .btn { margin-inline: 0; }
+
+
+
+  /**
+   * Clientes
+   */
+
+  .client .slider-item { min-width: calc(20% - 24px); }
+
+
+
+  /**
+   * Habilidades
+   */
+
+  .skill .container { align-items: flex-start; }
+
+}
+
+
+
+/**
+ * responsive mas largo de 1200px screen
+ */
+
+@media (min-width: 1200px) {
+
+  /**
+   * Sobre mi
+   */
+
+  .about-list { gap: 40px; }
+
+}
