@@ -10,7 +10,11 @@
 @import url('../components/card.css');
 @import url('../components/btn.css');
 
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
 
+.header.active { background-color: var(--marron-muy-clarito); }
 
 
 /*-----------------------------------*\
