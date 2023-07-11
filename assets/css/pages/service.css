@@ -2,10 +2,13 @@
   #service.css
 \*-----------------------------------*/
 
+
+
 /*-----------------------------------*\
   #COMPONENTS
 \*-----------------------------------*/
-
+@import url('../components/card.css');
+@import url('../components/btn.css');
 
 
 
@@ -13,6 +16,18 @@
 /*-----------------------------------*\
   #SERVICES
 \*-----------------------------------*/
+.service { padding-block-start: calc(var(--section-padding) + 60px); }
+.service .container h2{color: var(--marron-claro);}
+.service-list {
+  display: grid;
+  gap: 25px;
+}
+.card-title {color: var(--marron-oscuro);}
+.card-title { margin-block-end: 10px; }
+
+.card ion-icon { font-size: 3.2rem; }
+
+.card .body-sm { color: var(--blanco); }
 
 
 
