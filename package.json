@@ -1,14 +1,14 @@
 {
-  "name": "coder-alejo-tacca",
+  "name": "alejo",
   "version": "1.0.0",
   "description": "Este es una proyecto de practica de HTML y CSS del curso **Desarrollo Web**",
   "main": "index.js",
   "scripts": {
     "build-sass": "sass ./sass/main.scss ./css/main.css -w"
   },
-  "author": "Alejo Tacca",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.62.1"
+    "sass": "^1.63.6"
   }
 }

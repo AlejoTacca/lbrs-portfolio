@@ -1,6 +1,6 @@
 
 /*-----------------------------------*\
-  #CUSTOM PROPERTY
+  #Variables
 \*-----------------------------------*/
 :root{
 /**
@@ -37,12 +37,12 @@
   --fw-600: 600;
 
   /**
-  * spacing
+  * espaciado
   */
   --section-padding: 60px;
 
   /**
-  * shadow
+  * sombras
   */
   --shadow: 0 2px 2px hsla(0, 0%, 22%, 0.08);
 
@@ -55,7 +55,7 @@
    --radius-circle: 50%;
  
    /**
-    * transition
+    * transitions
     */
  
    --transition-1: 0.25s ease;
@@ -118,8 +118,8 @@ html {
 }
 
 body {
-  background-color: var(--white);
-  color: var(--davys-gray);
+  background-color: var(--blanco);
+  color: var(--jett);
   font-size: 1.6rem;
   line-height: 1.5;
   overflow: hidden;
