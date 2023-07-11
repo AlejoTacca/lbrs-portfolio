@@ -1,5 +1,5 @@
 /*-----------------------------------*\
-  #service.css
+  Contact.css
 \*-----------------------------------*/
 
 
@@ -123,6 +123,46 @@ textarea {
   .contact-content {
     width: 70%;
     margin-inline: auto;
+  }
+
+}
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive mas largo de 768px screen
+ */
+ @media (min-width: 768px) {
+
+  .contact-form {
+    padding: 35px;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+}
+
+/**
+ * responsive mas largo de 992px screen
+ */
+@media (min-width: 992px) {
+
+  .contact {
+    .container {
+      grid-template-columns: 1fr 0.9fr;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .contact-content {
+      width: 70%;
+      margin-inline: auto;
+    }
   }
 
 }

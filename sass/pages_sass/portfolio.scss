@@ -1,0 +1,112 @@
+/*-----------------------------------*\
+  #portfolio.css
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #COMPONENTS
+\*-----------------------------------*/
+@import url('./components/btn.scss');
+
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+
+.header.active {
+  background-color: var(--marron-muy-clarito);
+}
+
+/*-----------------------------------*\
+  #PORTFOLIO
+\*-----------------------------------*/
+.portfolio {
+  background-color: var(--blanco);
+  padding-block-start: calc(var(--section-padding) + 60px);
+
+  .portfolio-list,
+  .portfolio-card {
+    display: grid;
+  }
+
+  .portfolio-list {
+    gap: 50px;
+  }
+
+  .portfolio-card {
+    gap: 25px;
+
+    .card-banner {
+      position: relative;
+      border: 2px solid var(--marron-oscurito);
+      box-shadow: 0 0 0 var(--marron-oscuro);
+      transition: var(--transition-1);
+
+      &:is(:hover, :focus-within) {
+        box-shadow: 3px 3px 0 var(--marron-oscuro);
+      }
+
+      .btn-icon {
+        position: absolute;
+        top: 15px;
+        left: 0;
+        background-color: var(--white);
+        color: var(--jet);
+        font-size: 2rem;
+        padding: 8px;
+        border: 2px solid var(--marron-claro);
+        opacity: 0;
+        transition: var(--transition-1);
+        will-change: transform;
+
+        &:is(:hover, :focus-within) {
+          transform: translateX(15px);
+          opacity: 1;
+        }
+      }
+    }
+
+    .chip {
+      background-color: var(--marron-clarito);
+      max-width: max-content;
+      color: var(--blanco);
+      font-weight: var(--fw-500);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      padding: 6px 20px;
+      border-radius: var(--radius-pill);
+      margin-block-end: 18px;
+    }
+
+    .card-text {
+      margin-block: 10px 25px;
+    }
+  }
+}
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive mas largo de 768px screen
+ */
+ @media (min-width: 768px) {
+
+    .portfolio-card {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+  
+    .portfolio-list > li:nth-child(2n) .card-banner {
+      order: 1;
+    }
+  
+    .portfolio-card > * {
+      width: 80%;
+      margin-inline: auto;
+    }
+  
+    .portfolio-card .card-text {
+      margin-block-start: 20px;
+    }
+  
+  }
+  
