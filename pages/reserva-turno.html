@@ -71,7 +71,102 @@
     </header>
 
     <main>
-        
+        <article>
+            <!-- Formulario de Contacto -->
+            <section class="section contact has-bg-image" aria-labelledby="contact-label"
+            style="background-image: url('./assets/images/contact-bg.png')">
+            <div class="container">
+
+                <form action="" class="contact-form">
+
+                <h2 class="headline-sm" id="contact-label">Reserva tu turno!</h2>
+
+                <p class="contact-text body-md">
+                    No olvides decirme que servicio necesitas y tu disponibilidad.
+                </p>
+
+                <div class="wrapper">
+
+                    <div>
+                    <label for="name" class="label">Nombre</label>
+
+                    <input type="text" name="name" id="name" placeholder="Nombre..." required class="input-field">
+                    </div>
+
+                    <div>
+                    <label for="email" class="label">Tu Email </label>
+
+                    <input type="email" name="email" id="email" placeholder="Email..." required class="input-field">
+                    </div>
+
+                </div>
+
+                <label for="subject" class="label">Asunto</label>
+                <input type="text" name="subject" id="subject" placeholder="Titulo..." class="input-field">
+
+                <label for="message" class="label">Tu mensaje</label>
+                <textarea name="message" id="message" placeholder="Servicio, disponibilidad..." required class="input-field"></textarea>
+
+                <a href="#" class="btn btn-tertiary">Reservar</a>
+
+                </form>
+
+                <div class="contact-content">
+
+                <ul class="contact-list">
+
+                    <li class="contact-item">
+
+                    <div class="item-icon" style="background-color: hsl(177, 39%, 72%)">
+                        <ion-icon name="call" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <div>
+                        <p class="label-lg">WhatsApp</p>
+
+                        <a href="https://api.whatsapp.com/send?phone=1152600965&text=Hola%20Bel%C3%A9n,%20quisiera%20saber.." class="body-lg">+54 9 11 5260-0965</a>
+                    </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                    <div class="item-icon" style="background-color: hsl(41, 99%, 64%)">
+                        <ion-icon name="mail" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <div>
+                        <p class="label-lg">Mail</p>
+
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=CSkGSFfhTdtTnJWSkrJLKrDZxVJvlgFkddZqBDKTZhrCJVSjcCGfvRSQJHfSMgWRZsSXtMXtLWzJWZHJVHBpdkQglBwCgfkrVCHtPlHSlXvWvBRDdVcgDXwJbcKvDDGWlxcjBxQfCdPCLlDtgWnHXNpkCjCRmXKZLjq" class="body-lg">lbelen.soto@gmail.com</a>
+                    </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                    <div class="item-icon" style="background-color: hsl(19, 97%, 85%)">
+                        <ion-icon name="location" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <div>
+                        <p class="label-lg">Zona de estudio</p>
+
+                        <address class="body-lg">
+                        Parque Chacabuco,
+                        CABA, Buenos Aires.
+                        </address>
+                    </div>
+
+                    </li>
+
+                </ul>
+
+                </div>
+
+            </div>
+            </section>
+        </article>
     </main>
 
     <!-- Footer -->

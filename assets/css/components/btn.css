@@ -30,11 +30,11 @@
 }
 
 .btn-tertiary {
-  color: var(--jet);
+  color: var(--blanco);
   background-color: var(--marron-oscurito);
   --shadow-color: var(--marron-oscuro);
   --hover-bg: var(--marron-clarito);
   --hover-shadow-color: var(--marron-claro);
 }
 
-.btn-tertiary:is(:hover, :focus-visible) { color: var(--blanco); }
+.btn-tertiary:is(:hover, :focus-visible) { color: var(--marron-oscurito); }
