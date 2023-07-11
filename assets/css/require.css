@@ -214,7 +214,7 @@ body.loaded { overflow: visible; }
 
 .img-holder {
   aspect-ratio: var(--width) / var(--height);
-  background-color: var(--jet);
+  background-color: var(--blanco);
   overflow: hidden;
 }
 

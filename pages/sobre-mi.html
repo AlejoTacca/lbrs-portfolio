@@ -11,16 +11,14 @@
     <!-- LOGICON -->
     <link rel="icon" href="./images/encabezado/LogoICO.ico" type="ico" sizes="24px">
     <!-- CSS ORIGINAL -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/assets/css/require.css">
     <link rel="stylesheet" href="/assets/css/pages/portfolio.css">
     <!-- Archivo de salida de SASS -->
     <link rel="stylesheet" href=""> 
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
      <!-- FONTS -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- Iconos -->
     <script src="https://kit.fontawesome.com/5e09b964dd.js" crossorigin="anonymous"></script>
     <title>LBRS | Sobre Mi</title>
@@ -28,9 +26,215 @@
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div class="preloader" data-preloader>
+        <div class="preloader-circle"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" data-header>
+        <div class="container">
+
+        <a href="/index.html" class="logo">
+            <img src="/images/encabezado/Logo.png" width="151" height="28" alt="LBRS inicio">
+        </a>
+
+        <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+
+            <li class="navbar-item">
+                <a href="/index.html" class="label-lg navbar-link has-after active">Inicio</a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="/pages/servicios.html" class="label-lg navbar-link has-after">Servicios</a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="/pages/sobre-mi.html" class="label-lg navbar-link has-after">Sobre Mi</a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="/pages/reserva-turno.html" class="label-lg navbar-link has-after">Reserva turno</a>
+            </li>
+
+            </ul>
+        </nav>
+
+        <a href="./contact.html" class="btn btn-primary">Reserva tu turno ya!</a>
+
+        <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler>
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        </div>
+    </header>
+
+    <main>
+        <article>
+
+        <!-- Sobre Mi -->
+        <section class="section portfolio" aria-labelledby="portfolio-label">
+            <div class="container">
+
+            <h2 class="section-title headline-md text-center" id="portfolio-label">Experiencias de Trabajo</h2>
+
+            <ul class="portfolio-list">
+
+                <li>
+                <div class="portfolio-card">
+
+                    <div class="card-banner img-holder" style="--width: 800; --height: 540;">
+                    <img src="/images/images/st clares.png" width="800" height="540" loading="lazy"
+                        alt="Instituto St Clares language center" class="img-cover">
+
+                    <a href="https://stclarescenter.com.ar/" class="btn-icon" aria-label="Mas sobre el Instituto St Clares">
+                        <ion-icon name="arrow-forward-sharp" aria-hidden="true"></ion-icon>
+                    </a>
+                    </div>
+
+                    <div class="card-content">
+
+                    <span class="chip label-md">Profesora de ingles y Auxiliar de TIC</span>
+
+                    <h3 class="title-md">St. Clare's Language Center PB Creactivity</h3>
+
+                    <p class="card-text">
+                        Asistencia virtual y presencial. Mantenimiento y actualización de dispositivos (Legamaster, e-Beam, iPads, Apple TVs y computadoras). Gestión de espacios colaborativos de almacenamiento. Capacitación del personal.Asistencia virtual y presencial. Mantenimiento y actualización de dispositivos (Legamaster, e-Beam, iPads, Apple TVs y computadoras). 
+                        Gestión de espacios colaborativos de almacenamiento. Capacitación del personal.
+                    </p>
+
+                    <a href="https://stclarescenter.com.ar/" class="btn btn-primary">Acerca del St Clare´s</a>
+
+                    </div>
+
+                </div>
+                </li>
+
+                <li>
+                <div class="portfolio-card">
+
+                    <div class="card-banner img-holder" style="--width: 800; --height: 540;">
+                    <img src="/images/images/santaTeresa.png" width="800" height="540" loading="lazy"
+                        alt="Colegio Santa Teresa de Jesus" class="img-cover">
+
+                    <a href="https://colegiostateresa.edu.ar/" class="btn-icon" aria-label="Mas sobre Colegio Santa Teresa de Jesus">
+                        <ion-icon name="arrow-forward-sharp" aria-hidden="true"></ion-icon>
+                    </a>
+                    </div>
+
+                    <div class="card-content">
+
+                    <span class="chip label-md">Profesora de inglés de educación secundaria.</span>
+
+                    <h3 class="title-md">Colegio Santa Teresa de Jesus</h3>
+
+                    <p class="card-text">
+                        Profesora de inglés en nivel secundario. 
+                        Cursos: 1er y 2do año.
+                    </p>
+
+                    <a href="https://colegiostateresa.edu.ar/" class="btn btn-primary">Acerca de Santa Teresa</a>
+
+                    </div>
+
+                </div>
+                </li>
+
+                <li>
+                <div class="portfolio-card">
+
+                    <div class="card-banner img-holder" style="--width: 800; --height: 540;">
+                    <img src="/images/images/nuevo sol.png" width="800" height="540" loading="lazy"
+                        alt="Complejo Educativo Nuevo Sol" class="img-cover">
+
+                    <a href="https://complejoeducativonuevosol.com/" class="btn-icon" aria-label="Más sobre Colegio Nuevo Sol">
+                        <ion-icon name="arrow-forward-sharp" aria-hidden="true"></ion-icon>
+                    </a>
+                    </div>
+
+                    <div class="card-content">
+
+                    <span class="chip label-md">Profesora de inglés de educación secundaria.</span>
+
+                    <h3 class="title-md">Complejo Educativo Nuevo Sol</h3>
+
+                    <p class="card-text">
+                        Profesora de inglés en nivel secundario. 
+                        Cursos: 1er y 2do año.
+                    </p>
+
+                    <a href="https://complejoeducativonuevosol.com/" class="btn btn-primary">Acerca de Nuevo Sol</a>
+
+                    </div>
+
+                </div>
+                </li>
+
+                <li>
+                <div class="portfolio-card">
+
+                    <div class="card-banner img-holder" style="--width: 800; --height: 540;">
+                    <img src="/images/images/joaquin.png" width="800" height="540" loading="lazy"
+                        alt="Instituto Superior del Profesorado Dr. Joaquín V. González" class="img-cover">
+
+                    <a href="http://institutojvgonzalez.buenosaires.edu.ar/" class="btn-icon" aria-label="More about Website Design for Marketing Agency Startup">
+                        <ion-icon name="arrow-forward-sharp" aria-hidden="true"></ion-icon>
+                    </a>
+                    </div>
+
+                    <div class="card-content">
+
+                    <span class="chip label-md">Prof. Adscripta en Introducción a la Lingüística</span>
+
+                    <h3 class="title-md">Instituto Superior del Profesorado "Dr. Joaquín V. González"</h3>
+
+                    <p class="card-text">
+                        Me desempeño como ayudante ad-honorem de la cátedra de "Introducción a la Lingüística" del Prof. Sergio Rodríguez Ramos. 
+                        Mis tareas incluyen preparación y dictado de clases pactadas previamente, búsqueda y armado de material de cátedra y actividades.
+                        Para ingresar al mismo, di y aprobé mi clase de admisión frente a un jurado conformado por la junta departamental. 
+                        A su término obtendré el Certificado de Especialización en la asignatura.
+                    </p>
+
+                    <a href="http://institutojvgonzalez.buenosaires.edu.ar/" class="btn btn-primary">Acerca del Profesorado</a>
+
+                    </div>
+
+                </div>
+                </li>
+
+            </ul>
+
+            </div>
+        </section>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+        <ul class="social-list">
+            <li>
+            <a href="https://www.instagram.com/brs_english/?hl=es-la" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            </li>
+
+            <li>
+            <a href="https://www.linkedin.com/in/belenrodriguezsoto/" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            </li>
+        </ul>
+
+        <p class="text-center">&copy; 2023 copyright all right reserved - LBRS</p>
+
+        </div>
+    </footer>
 
     <!-- Javascript links -->
-    <script src="./assets/js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
     <!-- ionicon -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
