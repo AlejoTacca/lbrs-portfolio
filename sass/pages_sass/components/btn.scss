@@ -3,43 +3,42 @@
 \*-----------------------------------*/
 
 .btn {
-    background-color: var(--marron-claro);
-    font-size: var(--fs-14);
-    font-weight: var(--fw-500);
-    text-transform: uppercase;
-    max-width: max-content;
-    letter-spacing: 2px;
-    padding: 10px 22px;
-    box-shadow: 6px 6px 0 -1px var(--shadow-color, var(--marron-oscuro));
-    transition: var(--transition-1);
-  }
-  
-  .btn:is(:hover, :focus-visible) {
-    background-color: var(--hover-bg, var(--marron-oscuro));
-    box-shadow: 5px 5px 0 -2px var(--hover-shadow-color, var(--marron-clarito));
-  }
-  
-  .btn-primary,
-  .btn-secondary {
-    color: var(--blanco);
-  }
-  
-  .btn-secondary {
-    background-color: var(--marron-clarito);
-    --shadow-color: var(--marron-oscurito);
-    --hover-bg: var(--marron-oscuro);
-    --hover-shadow-color: var(--jet);
-  }
-  
-  .btn-tertiary {
-    color: var(--blanco);
-    background-color: var(--marron-oscurito);
-    --shadow-color: var(--marron-oscuro);
-    --hover-bg: var(--marron-clarito);
-    --hover-shadow-color: var(--marron-claro);
-  }
-  
-  .btn-tertiary:is(:hover, :focus-visible) {
-    color: var(--marron-oscurito);
-  }
-  
+  background-color: var(--marron-claro);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-500);
+  text-transform: uppercase;
+  max-width: max-content;
+  letter-spacing: 2px;
+  padding: 10px 22px;
+  box-shadow: 6px 6px 0 -1px var(--shadow-color, var(--marron-oscuro));
+  transition: var(--transition-1);
+}
+
+.btn:is(:hover, :focus-visible) {
+  background-color: var(--hover-bg, var(--marron-oscuro));
+  box-shadow: 5px 5px 0 -2px var(--hover-shadow-color, var(--marron-clarito));
+}
+
+.btn-primary,
+.btn-secondary {
+  color: var(--blanco);
+}
+
+.btn-secondary {
+  background-color: var(--marron-clarito);
+  --shadow-color: var(--marron-oscurito);
+  --hover-bg: var(--marron-oscuro);
+  --hover-shadow-color: var(--jet);
+}
+
+.btn-tertiary {
+  color: var(--blanco);
+  background-color: var(--marron-oscurito);
+  --shadow-color: var(--marron-oscuro);
+  --hover-bg: var(--marron-clarito);
+  --hover-shadow-color: var(--marron-claro);
+}
+
+.btn-tertiary:is(:hover, :focus-visible) {
+  color: var(--marron-oscurito);
+}
